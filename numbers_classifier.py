@@ -7,7 +7,7 @@ import pickle
 
 #======================Variables========================
 
-TRAIN_FLAG = True
+TRAIN_FLAG = False
 target = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 rects = [] 
 colors = []
@@ -162,7 +162,7 @@ with open ('anwsers', 'rb') as anwsersFile:
 
 
 if (TRAIN_FLAG):
-    for i in range(0, 200):
+    for i in range(0, 0):
         random.seed()
         index = random.randint(0, len(drawings)-1)
         brain.train(drawings[index], anwsers[index])    
